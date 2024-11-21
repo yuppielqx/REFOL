@@ -1,0 +1,16 @@
+# for the setup of fl
+seed: 111
+pred_steps: 1 #prediction steps 1, 6, 12
+agg_model: "refol"
+dataset: "PEMS-BAY" # METR-LA or PEMS-BAY
+adj_mx: "pems.pkl" #pems.pkl or adj_mx.pkl
+num_clients: 50
+kl_threshold: 0.0003
+
+# for client model
+hidden_size: 128
+dropout: 0.0
+num_layers: 1
+lr: 0.001
+epoch: 5
+batch_size: 1
